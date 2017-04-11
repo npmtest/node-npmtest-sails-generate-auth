@@ -1,1 +1,40 @@
-{     "devDependencies": {         "sails-generate-auth": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-sails-generate-auth",     "homepage": "https://github.com/npmtest/node-npmtest-sails-generate-auth",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-sails-generate-auth.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "test coverage for [sails-generate-auth (v0.3.1)](https://github.com/kasperisager/sails-generate-auth) [![npm package](https://img.shields.io/npm/v/npmtest-sails-generate-auth.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-sails-generate-auth) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-sails-generate-auth.svg)](https://travis-ci.org/npmtest/node-npmtest-sails-generate-auth)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "sails-generate-auth": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-sails-generate-auth",
+    "keywords": [
+        "coverage",
+        "test",
+        "sails-generate-auth"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_sails_generate_auth.js",
+    "name": "npmtest-sails-generate-auth",
+    "nameAlias": "npmtest_sails_generate_auth",
+    "nameOriginal": "npmtest-sails-generate-auth",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-sails-generate-auth.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
