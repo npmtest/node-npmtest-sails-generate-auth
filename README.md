@@ -1,6 +1,6 @@
 # npmtest-sails-generate-auth
 
-#### test coverage for  [sails-generate-auth (v0.3.1)](https://github.com/kasperisager/sails-generate-auth)  [![npm package](https://img.shields.io/npm/v/npmtest-sails-generate-auth.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-sails-generate-auth) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-sails-generate-auth.svg)](https://travis-ci.org/npmtest/node-npmtest-sails-generate-auth)
+#### basic test coverage for  [sails-generate-auth (v0.3.1)](https://github.com/kasperisager/sails-generate-auth)  [![npm package](https://img.shields.io/npm/v/npmtest-sails-generate-auth.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-sails-generate-auth) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-sails-generate-auth.svg)](https://travis-ci.org/npmtest/node-npmtest-sails-generate-auth)
 
 #### Generate a Passport.js authentication layer for your Sails app that will Rock Your Socks™.
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-sails-generate-auth/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-sails-generate-auth/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-sails-generate-auth/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-sails-generate-auth/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-sails-generate-auth/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-sails-generate-auth/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-sails-generate-auth/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-sails-generate-auth/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-sails-generate-auth/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-sails-generate-auth/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-sails-generate-auth/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-sails-generate-auth/build/coverage.html/index.html)
 
@@ -86,7 +86,8 @@
         "sailsVersion": "0.10.x"
     },
     "scripts": {},
-    "version": "0.3.1"
+    "version": "0.3.1",
+    "bin": {}
 }
 ```
 
